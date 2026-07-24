@@ -1,4 +1,4 @@
-# 📱 ZaloPay Review Severity Classification with Deep Learning
+# ZaloPay Review Severity Classification with Deep Learning
 
 Automatically classifying the **severity** of customer feedback (not just sentiment) for Vietnam's leading e-wallet, ZaloPay — built to help fintech teams triage financial-risk complaints before they escalate.
 
@@ -7,7 +7,7 @@ Automatically classifying the **severity** of customer feedback (not just sentim
 
 ---
 
-## 🎯 Why this project?
+## Why this project?
 
 Most review-analysis systems stop at **sentiment** (positive / negative). But two 1-star reviews can mean very different things:
 
@@ -20,7 +20,7 @@ Rating alone can't tell these apart either — some 5-star reviews still contain
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 - **~74,600 reviews** scraped from the ZaloPay app on Google Play Store (`google-play-scraper`), covering 06/2025 – 06/2026
 - Fields: rating, review text, timestamp, thumbs-up count, app version, reply status
@@ -37,7 +37,7 @@ Rating alone can't tell these apart either — some 5-star reviews still contain
 
 ---
 
-## 🔧 Pipeline (KDD + Web Mining)
+## Pipeline (KDD + Web Mining)
 
 ```
 Raw reviews (Google Play)
@@ -65,7 +65,7 @@ Regression (baseline)    fine-tuned end-to-end (PyTorch + HuggingFace)
 
 ---
 
-## 🤖 Models compared
+## Models compared
 
 | Metric | TF-IDF + Logistic Regression | PhoBERT Fine-tuning |
 |---|---|---|
@@ -80,7 +80,7 @@ At **97% precision** on the Critical class, a "Critical" prediction can be trust
 
 ---
 
-## 💡 Key business insights
+## Key business insights
 
 From analyzing the "Serious" + "Critical" reviews:
 
@@ -89,17 +89,17 @@ From analyzing the "Serious" + "Critical" reviews:
 - **20%** — App performance & stability (crashes, lag)
 - **18%** — Account verification & OTP/KYC issues
 
-👉 Full write-up, confusion matrices, word clouds, and the interactive dashboard are in [`/report`](./report) and [`/notebooks`](./notebooks).
+==> Full write-up, confusion matrices, word clouds, and the interactive dashboard are in [`/report`](./report) and [`/notebooks`](./notebooks).
 
 ---
 
-## 🛠️ Tech stack
+## Tech stack
 
 `Python` `Pandas` `NumPy` `google-play-scraper` `underthesea` (Vietnamese NLP) `Scikit-learn` `PyTorch` `HuggingFace Transformers` `PhoBERT` `Matplotlib` `Seaborn` `WordCloud`
 
 ---
 
-## 📁 Repository structure
+## Repository structure
 
 ```
 ├── data/                 # raw & processed datasets (or scripts to fetch them)
@@ -114,7 +114,7 @@ From analyzing the "Serious" + "Critical" reviews:
 └── README.md
 ```
 
-## ▶️ How to run
+## How to run
 
 ```bash
 git clone https://github.com/<username>/zalopay-severity-classification.git
