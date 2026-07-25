@@ -104,11 +104,9 @@ From analyzing the "Serious" + "Critical" reviews:
 ```
 ├── data/                 # raw & processed datasets (or scripts to fetch them)
 ├── notebooks/
-│   ├── 01_data_collection.ipynb
-│   ├── 02_eda.ipynb
-│   ├── 03_preprocessing.ipynb
-│   ├── 04_baseline_tfidf_logreg.ipynb
-│   └── 05_phobert_finetuning.ipynb
+│   ├── 01_ZaloPay_Data processing.ipynb
+│   ├── 02_Base Model - TF-IDF.ipynb
+│   └── 03_PhoBERT Model.ipynb
 ├── dashboard/            # dashboard source
 ├── report/               # full written report (PDF)
 └── README.md
